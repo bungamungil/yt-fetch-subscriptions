@@ -4,7 +4,7 @@ from database import db
 
 
 class Subscription(Model):
-    subscription_id = CharField(index=True)
+    subscription_id = CharField(index=True, primary_key=True)
     user_channel_id = CharField()
     subscription_channel_id = CharField()
     subscription_channel_name = CharField()
